@@ -1,0 +1,205 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.cardBlock{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cardBlock .leftSide{
+    width: 450px;
+    height: 100%;
+    background-image: url(../images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cardBlock .leftSide .cardimage{
+    width: 360px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.cardBlock .leftSide .cardimage:nth-child(2){
+    top: 45%;
+    left: 15%;
+}
+
+.cardBlock .leftSide .cardimage:nth-child(2) .threeNum{
+    position: absolute;
+    right: 15%;
+    color: #fcf5f5;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+.cardBlock .leftSide .cardimage:nth-child(1){
+    top: 5%;
+    left: 5%;
+    position: relative;
+}
+
+.cardBlock .leftSide .cardimage:nth-child(1) .dateandname{
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    left: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.cardBlock .leftSide .cardimage:nth-child(1) .number{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+
+.cardBlock .leftSide .cardimage>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardBlock .rightSide{
+    width: 750px;
+    height: 100%;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardBlock .rightSide>form{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+}
+.cardBlock .rightSide>form .inputBox{
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    
+    
+}
+
+.cardBlock .rightSide>form .inputBox>input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px
+    ;
+}
+
+.cardBlock .rightSide>form .inputBox>label{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cardBlock .rightSide>form .dateBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardBlock .rightSide > form > .dateBox > .firstInput{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    height: 100px;
+    width: auto;
+}
+.cardBlock .rightSide > form > .dateBox > .firstInput>label{
+    position: absolute;
+    top: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.cardBlock .rightSide > form > .dateBox > .firstInput>input{
+       width: 100px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.cardBlock .rightSide > form > .dateBox > .firstInput > .inputs >input{
+    width: 50px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+
+button {
+    padding: 10px 40px;
+    border: none;
+    background-color: #ccc;
+}
+
+.modal{
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+
+@media screen and (max-width: 991px) {
+   .cardBlock{
+    flex-direction: column;
+    height: 800px;
+   } 
+   .cardBlock .leftSide{
+    width: 100%;
+    background-image: url(../images/bg-main-mobile.png);
+    background-size: cover;
+  
+   }
+
+   .cardBlock .leftSide .cardimage:nth-child(2){
+    top: 8%;
+    left: 35%;
+}
+.cardBlock .leftSide .cardimage:nth-child(1){
+    top: 45%;
+    left: 15%;
+    position: relative;
+    z-index: 1;
+}
+}
